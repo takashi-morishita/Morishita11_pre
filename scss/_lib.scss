@@ -1,0 +1,76 @@
+///////////////////
+//     mixin     //
+///////////////////
+
+@mixin pc {
+  @media screen and (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin tab {
+   @media screen and (max-width: 999px) {
+     @content;
+   }
+}
+
+@mixin sp {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+///////////////////
+//     変数      //
+///////////////////
+
+$left_m: 7.6%;
+
+///////////////////
+//     共通      //
+///////////////////
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.w-wrap {
+  width: 100% - $left_m *2;
+  margin: 0 auto;
+}
+
+.h-wrap {
+  padding: 260px 0 70px 0;
+  @include tab {
+    padding: 60px 0;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  // display: inline-block;
+  font-size: 1.8rem;
+  font-family: Roboto;
+  color: #707070;
+  letter-spacing: 5.4px;
+  margin-bottom: 11px;
+  @include tab {
+    margin-bottom: 50px;
+  }
+  &:after {
+    width: 99px;
+    height: 1px;
+    content: "";
+    background-color: #707070;
+    margin-left: 22px;
+    @include sp {
+      width: 44px;
+    }
+  }
+}

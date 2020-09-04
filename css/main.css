@@ -1,0 +1,594 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.w-wrap {
+  width: 84.8%;
+  margin: 0 auto;
+}
+
+.h-wrap {
+  padding: 260px 0 70px 0;
+}
+@media screen and (max-width: 999px) {
+  .h-wrap {
+    padding: 60px 0;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: Roboto;
+  color: #707070;
+  letter-spacing: 5.4px;
+  margin-bottom: 11px;
+}
+@media screen and (max-width: 999px) {
+  .title {
+    margin-bottom: 50px;
+  }
+}
+.title:after {
+  width: 99px;
+  height: 1px;
+  content: "";
+  background-color: #707070;
+  margin-left: 22px;
+}
+@media screen and (max-width: 600px) {
+  .title:after {
+    width: 44px;
+  }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 68px 77px;
+  position: absolute;
+  z-index: 10;
+}
+@media screen and (max-width: 999px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    padding: 24px 7.6%;
+  }
+}
+
+.hd-logo {
+  font-size: 3.8rem;
+}
+@media screen and (max-width: 600px) {
+  .hd-logo {
+    font-size: 2.2rem;
+  }
+}
+
+nav {
+  margin-left: 20px;
+  width: 35%;
+}
+@media screen and (max-width: 999px) {
+  nav {
+    display: none;
+  }
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #707070;
+}
+nav ul li {
+  margin-left: 21px;
+}
+nav ul li:hover {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.ham {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .ham {
+    width: 16px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #3B4043;
+  }
+  .ham span:nth-child(3) {
+    width: 65%;
+  }
+}
+
+.first-v {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  position: relative;
+}
+@media screen and (max-width: 999px) {
+  .first-v {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  .first-v {
+    background-size: cover;
+    background-position: 0% 0%;
+  }
+}
+.first-v__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 27%;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(0, -50%);
+  text-align: right;
+  font-size: 3.8rem;
+}
+@media screen and (max-width: 999px) {
+  .first-v__wrap {
+    width: 76%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.8rem;
+  }
+}
+
+.catch1 {
+  font-family: "ヒラギノ明朝 Pro";
+}
+@media screen and (max-width: 999px) {
+  .catch1 {
+    transform: translate(0, 290%);
+  }
+}
+
+.catch2 {
+  font-family: Zapfino;
+}
+@media screen and (max-width: 999px) {
+  .catch2 {
+    transform: translate(0, -620%);
+  }
+}
+
+.concept {
+  background: linear-gradient(to bottom, #A193861F 0%, #A193861F 40%, #A1938689 40%, #A1938689 100%);
+}
+@media screen and (max-width: 600px) {
+  .concept {
+    background: linear-gradient(to bottom, #A193861F 0%, #A193861F 25%, #A1938689 25%, #A1938689 100%);
+  }
+}
+
+.concept__photo {
+  display: flex;
+  justify-content: space-between;
+}
+.concept__photo .photo1 {
+  width: 62%;
+}
+@media screen and (max-width: 600px) {
+  .concept__photo .photo1 {
+    width: 49.5%;
+    height: 205px;
+    overflow: hidden;
+  }
+}
+.concept__photo .photo1 img {
+  width: 100%;
+  max-height: 413px;
+}
+@media screen and (max-width: 600px) {
+  .concept__photo .photo1 img {
+    width: auto;
+    height: 100%;
+    transform: translate(-150px, 0);
+  }
+}
+.concept__photo .photo2 {
+  width: 35.9%;
+}
+@media screen and (max-width: 600px) {
+  .concept__photo .photo2 {
+    width: 49.5%;
+    height: 205px;
+    overflow: hidden;
+  }
+}
+.concept__photo .photo2 img {
+  width: 100%;
+  max-height: 413px;
+}
+@media screen and (max-width: 600px) {
+  .concept__photo .photo2 img {
+    width: auto;
+    height: 100%;
+    transform: translate(-24px, 2px);
+  }
+}
+
+.concept__massage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 70px auto 0;
+  color: #FFFFFF;
+  line-height: 1.6em;
+}
+@media screen and (max-width: 999px) {
+  .concept__massage {
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto 0;
+  }
+}
+.concept__massage1 {
+  width: 62%;
+  font-size: 4.0rem;
+  font-family: "ヒラギノ明朝 Pro";
+  letter-spacing: 16px;
+}
+@media screen and (max-width: 999px) {
+  .concept__massage1 {
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 7.2px;
+    margin-bottom: 20px;
+  }
+}
+.concept__massage2 {
+  width: 35%;
+  font-size: 1.6rem;
+  font-family: "ヒラギノ角ゴ Pro";
+  letter-spacing: 1.6px;
+}
+@media screen and (max-width: 999px) {
+  .concept__massage2 {
+    width: 100%;
+  }
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 999px) {
+  .menu-items {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  font-family: "Roboto Mono for Powerline";
+  letter-spacing: 0.1em;
+  width: 25%;
+}
+@media screen and (max-width: 999px) {
+  .menu-item {
+    width: 100%;
+  }
+  .menu-item:not(:nth-child(3)) .price {
+    margin-bottom: 60px;
+  }
+}
+.menu-item__img {
+  margin-bottom: 37px;
+}
+@media screen and (max-width: 999px) {
+  .menu-item__img {
+    margin-bottom: 30px;
+  }
+}
+.menu-item__img img {
+  width: 100%;
+}
+.menu-item .menu-txt {
+  font-family: Roboto Mono for Powerline;
+  padding: 0 10px;
+}
+@media screen and (max-width: 999px) {
+  .menu-item .menu-txt {
+    padding: 0 10px;
+  }
+}
+.menu-item .menu-txt h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 34px;
+}
+@media screen and (max-width: 999px) {
+  .menu-item .menu-txt h3 {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+.menu-item .menu-txt__desc {
+  margin-bottom: 34px;
+  line-height: 19px;
+}
+.menu-item .menu-txt .price {
+  text-align: right;
+}
+
+.access {
+  background-color: #A193861F;
+}
+@media screen and (max-width: 600px) {
+  .access {
+    height: 710px;
+  }
+}
+.access .title {
+  padding-left: 7.6%;
+}
+.access .access-wrap {
+  padding-left: 7.6%;
+  background-color: #D0C5BA;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+@media screen and (max-width: 600px) {
+  .access .access-wrap {
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 0;
+    height: 513px;
+  }
+}
+.access .access-wrap ul {
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-top: 100px;
+}
+@media screen and (max-width: 600px) {
+  .access .access-wrap ul {
+    margin: 30px 0 0 7.6%;
+    order: 2;
+  }
+}
+.access .access-wrap ul li {
+  padding-bottom: 24px;
+}
+.access .access-wrap ul li:first-child {
+  font-size: 24px;
+  color: #00000038;
+  padding-bottom: 30px;
+}
+
+.map {
+  width: 60%;
+}
+@media screen and (max-width: 600px) {
+  .map {
+    width: 100%;
+    height: 231px;
+    order: 1;
+  }
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.f-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 600px) {
+  .f-container {
+    flex-direction: column;
+  }
+}
+.f-container .f-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .f-container .f-contents {
+    order: 3;
+  }
+}
+.f-container .f-contents h1 {
+  font-size: 32px;
+  color: #7070704D;
+  font-family: "Roboto Mono for Powerline";
+}
+@media screen and (max-width: 600px) {
+  .f-container .f-contents h1 {
+    font-size: 18px;
+  }
+}
+.f-container .f-contents .f-sns {
+  margin-left: 26px;
+  font-size: 20px;
+}
+
+.reserve {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .reserve {
+    margin-bottom: 62px;
+  }
+}
+.reserve .btn {
+  padding: 10px 41px;
+  height: 37px;
+  color: #707070;
+  border: 1px solid #707070;
+  background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .reserve .btn {
+    width: 184px;
+    order: 2;
+  }
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+  background-color: #7070704D;
+  margin: 160px 0 80px 0;
+}
+@media screen and (max-width: 600px) {
+  .bar {
+    margin: 63px 0 60px;
+    order: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
